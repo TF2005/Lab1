@@ -5,6 +5,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 30px 50px;
+    min-height: 100vh;
+    /*I used this and the following 4 commands to be able to have the footer on the bottom of the page*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -44,14 +49,35 @@ p {
     line-height: 1.6;
     margin: 0 0 20px 0;
     padding: 0;
-
 }
 
+main {
+    flex: 1;
+}
 
-.bio {
+.about-photo {
     text-align: center;
     margin: 35px 0 8px 0;
     padding: 0;
+}
+
+.about-photo img {
+    width: 200px;
+    height: 305px;
+    margin-bottom: 10px;
+}
+
+.about-photo p {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
 }
 
 footer p {
