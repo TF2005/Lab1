@@ -1,0 +1,72 @@
+body {
+    background-color: #ffffff;
+    font-family: Georgia, Arial;
+    text-align: center;
+    margin: 0;
+    padding: 30px 50px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+}
+
+nav {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #333333;
+    /*i tried putting the color in the nav without specifiying the element a it turned out that a has its 
+    own browser default color so i had to do it like this to be able to override it*/
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+h2 {
+    color: #DE638A;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 35px 0 8px 0;
+    padding: 0;
+    text-align: center;
+}
+
+main p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+footer {
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 45px;
+    padding: 15px 0;
+}
