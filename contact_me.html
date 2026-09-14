@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Project 1_Contact</title>
-    <link rel="stylesheet" href="css/Cstyles.css">
+    <link rel="stylesheet" href="css/Cstyles.css"> <!-- to be able to link the css file to the html file -->
 </head>
 
 <body>
@@ -20,13 +20,13 @@
 
     <main>
         <h2> Feel free to get in touch !</h2>
-        <form action="/Submit" method="post">
+        <form action="/Submit" method="post"> <!--to send these data once filled to the server not to get them from it-->
             <label for="name">Name</label>
             <input id="name" name="username" type="text" required>
             <label for="email" class="form-label">Email</label>
             <input id="email" name="email" type="email" required>
-            <label for="message" class="form=label">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" required></textarea> <!--for a wider place to write the input in -->
             <button type="submit">Send</button>
         </form>
     </main>

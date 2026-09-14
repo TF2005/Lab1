@@ -1,3 +1,5 @@
+/* most of the comments of the Hstyles.css also apply here */
+
 body {
     background-color: #ffffff;
     font-family: Georgia, Arial;
@@ -71,13 +73,11 @@ h2 {
 main p {
     color: #333333;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
+    font-weight: 400; /*for degree of bold */
+    line-height: 1.6; /*height of the words */
     margin: 0;
     padding: 20px 20px 0 20px;
 }
-
-
 
 footer p {
     box-sizing: content-box;

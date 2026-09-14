@@ -1,13 +1,19 @@
 body {
     background-color: #ffffff;
-    font-family: Georgia, Arial;
+    font-family: Georgia, Arial; /*it uses georgia if not found it uses arial*/
     text-align: center;
     margin: 0;
+    /* i wanted to remove the space given by default */
     padding: 30px 50px;
+    /* first one for top-bottom and second one for right-left */
     min-height: 100vh;
+    /* visible area on my browser */
     box-sizing: border-box;
+    /* the width of box doesn't only include the content but also the padding */
     display: flex;
+    /* to organize the tags and put the footer at the bottom of the page */
     flex-direction: column;
+    /*organize them in a vertical way */
 }
 
 
@@ -28,19 +34,23 @@ nav {
     margin-bottom: 35px;
     padding: 0;
     display: flex;
+    /* here i used it for the nav bar but a vertical way to be able to adjust the space between them the way i want */
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
+    /* handles the space in the nav bar between the elements */
 }
 
 nav a {
     color: #333333;
     /*i tried putting the color in the nav without specifiying the element a it turned out that a has its 
     own browser default color so i had to do it like this to be able to override it*/
-    text-decoration: none;
+    text-decoration: none; /* I removed the underline under the elements in the navbar */
 }
 
 main {
-    flex: 1;
+    flex: 1; /*row is set to true to fill extra space, shrink is set to true so when i shrink the page, and width by default the screen 
+    opens this way*/
 }
 
 h2 {
@@ -60,9 +70,10 @@ main p {
     line-height: 1.6;
     margin: 0;
     padding: 20px 20px 0 20px;
+    /* I added space so the text is not too close to the edges */
 }
 
-footer p{
+footer p {
     color: #333333;
     font-size: 13px;
     font-weight: 400;
